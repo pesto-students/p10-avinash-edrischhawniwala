@@ -1,0 +1,93 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+.container {
+    display: flex;
+}
+.side-bar {
+    display: inline;
+}
+.contant {
+    display: block;
+    width: 100%;
+}
+.side-bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.side-bar ul li {
+    padding: 12px;
+    height: 50px;
+}
+.playlist-head {
+    background-color: #454545;
+    display: flex;
+    height: auto;
+}
+.playlist-head .playlist-info {
+    padding: 24px;
+    display: grid;
+    color: azure;
+}
+.playlist-artist-details {
+    align-self: flex-start;
+}
+.playlist-artist-details h2 {
+    margin: 0px;
+}
+.playlist-options {
+    align-self: flex-end;
+}
+.playlist-button {
+    background-color: transparent;
+    border: 0;
+    color: azure;
+}
+.playlist-body .playlist-content table {
+    margin-top: 10px;
+    width: 100%;
+    border-spacing: 0;
+}
+.playlist-body .playlist-content table tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+.playlist-body .playlist-content table tr td {
+    padding: 5px;
+}
+.playlist-body .playlist-content table tr td:first-child {
+    text-align: right;
+}
+.playlist-body .playlist-content table .sync-btn {
+    color: blue;
+    background-color: transparent;
+}
+.playlist-songsbar {
+    position: absolute;
+    bottom: 0%;
+    background-color: #426799;
+    width: 100%;
+    display: flex;
+    color: azure;
+}
+.playlist-image {
+    padding: 24px;
+}
+.playlist-songsbar .songs-playback-options {
+    margin: 0 0 0 auto;
+    height: auto;
+}
+.playlist-songsbar .songs-playback-options .playlist-button {
+    height: 118px;
+    width: 118px;
+}
+.playlist-songsbar .songs-playback-options, .songs-info, .playlist-image {
+    align-self: center;
+}
+.playlist-songsbar .playlist-image {
+    padding: 10px;
+}
+.playlist-songsbar .playlist-image img {
+    height: 100px;
+    width: 100px;
+}
