@@ -1,0 +1,67 @@
+.box-container {
+    background-color: lightblue;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 50% 50%;
+  }
+  .message {
+    font-size: 2em;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+  }
+  .box-1 {
+    background-color: red;
+  }
+  .box-2 {
+    background-color: yellow;
+  }
+  .box-3 {
+    background-color: blue;
+  }
+  .box-4 {
+    background-color: green;
+  }
+  .box-container:hover > .box-1 {
+    transform-origin: top left;
+    transform: rotate(90deg);
+  }
+  .box-container:not(:hover) > .box-1 {
+    transform-origin: top left;
+  }
+  .box-container:hover > .box-2 {
+    transform-origin: top right;
+    transform: rotate(-90deg);
+    
+  }
+  .box-container:not(:hover) > .box-2 {
+    transform-origin: top right;
+  }
+  .box-container:hover > .box-3 {
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    
+  }
+  .box-container:not(:hover) > .box-3 {
+    transform-origin: bottom left;
+  }
+  .box-container:hover > .box-4 {
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+    
+  }
+  .box-container:not(:hover) > .box-4 {
+    transform-origin: bottom right;
+  }
+  .box {
+    position: relative;
+    transition: transform 2s;
+    z-index: 2;
+  }
