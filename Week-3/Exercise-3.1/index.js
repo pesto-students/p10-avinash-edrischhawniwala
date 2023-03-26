@@ -3,14 +3,12 @@ function memorize(func) {
     return function (...args) {
         var key = args.toString();
         if(cache.has(key)){
-            result = cache.get(key);
-            // console.log('From cache: ', result);
-            return result;
+            // console.log('From cache: ', cache.get(key));
+            return cache.get(key);
         } else {
             cache.set(key, func(...args));
-            result = cache.get(key);
-            // console.log('Calculated: ', result);
-            return result;
+            // console.log('Calculated: ', cache.get(key));
+            return cache.get(key);
         }
     }
 }
